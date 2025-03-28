@@ -21,13 +21,15 @@ body {
   overscroll-behavior: contain;
 }
 
-.container {
+.carousel {
+  position: relative;
   display: grid;
   grid-template-columns: 800px 1fr;
   grid-template-rows: repeat(2);
 }
 
 .owl-carousel {
+  position: relative;
   grid-row: 1 / span 2;
 }
 
@@ -48,4 +50,18 @@ body {
 .item {
   height: 300px;
   background: #4dc7a0;
+}
+
+.owl-prev {
+  position: absolute;
+  top: 160px;
+  left: 5px;
+  z-index: 1;
+}
+
+.owl-next {
+  position: absolute;
+  top: 160px;
+  right: 490px;
+  z-index: 1;
 }
